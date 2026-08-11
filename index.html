@@ -1,144 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mitchell Stack provides independent software development, bug fixing, API integration, automation and open-source contribution services.">
-  <meta name="theme-color" content="#06101d">
-  <meta property="og:title" content="Mitchell Stack | Software Engineering">
-  <meta property="og:description" content="Independent software development and open-source contribution services operated by Alan Mitchell Astohuayhua Amiquero.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mitchell82-stack.github.io/">
-  <link rel="canonical" href="https://mitchell82-stack.github.io/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <title>Mitchell Stack | Software Engineering</title>
+  <title>Cine Hindi — Cartelera y estrenos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav" aria-label="Main navigation">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#top" aria-label="Mitchell Stack home">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span>Mitchell <span>Stack</span></span>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><span>SPCI</span></div>
+        <div class="logo-text">
+          <span>SOCIEDAD PERUANA</span>
+          <span>CINE INDIO</span>
+        </div>
       </a>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#process">Process</a>
-        <a class="btn" href="contact.html">Contact</a>
+      <ul class="nav-links">
+        <li><a href="#cartelera" class="active">Películas</a></li>
+        <li><a href="#cines">Cines</a></li>
+        <li><a href="#condiciones">Condiciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="location-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Lima
+        </button>
+        <button class="lang-btn">IN</button>
       </div>
     </div>
   </nav>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Independent software engineering studio</span>
-          <h1>Software built with <span class="gradient-text">clarity, reliability and purpose.</span></h1>
-          <p class="hero-copy">Mitchell Stack provides independent software development, bug fixing, API integration, automation and open-source contribution services for digital products and technical teams.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="contact.html">Start a conversation</a>
-            <a class="btn" href="https://github.com/mitchell82-stack" target="_blank" rel="noopener noreferrer">View GitHub profile</a>
-          </div>
-          <p class="hero-note">Operated by Alan Mitchell Astohuayhua Amiquero · Independent service provider</p>
-        </div>
-
-        <aside class="signal-card" aria-label="Service overview">
-          <div class="signal-top">
-            <strong>Mitchell Stack</strong>
-            <span class="status">Available for projects</span>
-          </div>
-          <div class="metric-grid">
-            <div class="metric"><span>Core service</span><strong>Software development</strong></div>
-            <div class="metric"><span>Delivery model</span><strong>Review and approval</strong></div>
-            <div class="metric"><span>Collaboration</span><strong>GitHub &amp; open source</strong></div>
-            <div class="metric"><span>Business type</span><strong>Independent studio</strong></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="wrap">
-        <p class="section-kicker">Services</p>
-        <h2>Focused engineering support.</h2>
-        <p class="lead">Practical technical services for software projects, online platforms and open-source communities.</p>
-        <div class="grid">
-          <article class="card"><div class="card-number">01</div><h3>Software Development</h3><p>Implementation of web features, internal tools and tailored software solutions based on defined requirements.</p></article>
-          <article class="card"><div class="card-number">02</div><h3>Bug Fixing</h3><p>Investigation, diagnosis and correction of software defects, unexpected behavior and technical issues.</p></article>
-          <article class="card"><div class="card-number">03</div><h3>API Integration</h3><p>Connection of services, data flows and third-party platforms through maintainable integrations.</p></article>
-          <article class="card"><div class="card-number">04</div><h3>Open Source</h3><p>Issue resolution, approved code changes, documentation improvements and public project contributions.</p></article>
-          <article class="card"><div class="card-number">05</div><h3>Automation</h3><p>Workflow improvements designed to reduce repetitive work and increase operational consistency.</p></article>
-          <article class="card"><div class="card-number">06</div><h3>Technical Consulting</h3><p>Clear implementation guidance for architecture, integrations, workflows and software delivery decisions.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap split">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2>Independent, transparent and outcome-focused.</h2>
-          <p class="lead">Mitchell Stack is the professional software services brand operated by Alan Mitchell Astohuayhua Amiquero. Clients may discover the work through GitHub, developer communities and independent third-party platforms.</p>
-          <div class="pills" aria-label="Areas of work">
-            <span class="pill">Web Development</span>
-            <span class="pill">Backend Systems</span>
-            <span class="pill">APIs</span>
-            <span class="pill">Automation</span>
-            <span class="pill">GitHub</span>
-            <span class="pill">Open Source</span>
-            <span class="pill">Technical Delivery</span>
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <div class="hero-slides" id="heroSlides">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>Happy New Year</h1>
+          <p>El espectáculo musical de Shah Rukh Khan lidera nuestra cartelera.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(0)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
           </div>
         </div>
-
-        <aside class="content-card">
-          <h3>How engagements work</h3>
-          <p>Work begins with a defined technical requirement and expected result. Deliverables are implemented, tested and submitted for review.</p>
-          <p>Payment is received after completed work is reviewed and approved by the client, project maintainer or relevant platform.</p>
-          <div class="notice">MergeFund and similar services are independent third-party platforms. They are not owned, operated or represented by Mitchell Stack.</div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="wrap">
-        <p class="section-kicker">Process</p>
-        <h2>A clear delivery workflow.</h2>
-        <p class="lead">Simple stages keep each project understandable, reviewable and accountable.</p>
-        <div class="workflow">
-          <div class="step"><span class="step-index">1</span><strong>Scope</strong><span>Define the requirement, constraints and expected outcome.</span></div>
-          <div class="step"><span class="step-index">2</span><strong>Build</strong><span>Implement the solution with focused development and documentation.</span></div>
-          <div class="step"><span class="step-index">3</span><strong>Review</strong><span>Test the deliverable and submit it for technical review.</span></div>
-          <div class="step"><span class="step-index">4</span><strong>Approval</strong><span>Finalize delivery and receive payment after approval.</span></div>
+        <div class="hero-poster">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_.jpg" alt="Happy New Year">
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="cta">
-          <p class="section-kicker">Contact</p>
-          <h2>Let’s build something useful.</h2>
-          <p>For software development, bug fixing, integration or open-source collaboration inquiries, use the public GitHub profile or the contact page.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="contact.html">Contact Mitchell Stack</a>
-            <a class="btn" href="https://github.com/mitchell82-stack" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>3 Idiots</h1>
+          <p>La comedia más taquillera de Bollywood vuelve a la pantalla grande.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(1)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
           </div>
         </div>
+        <div class="hero-poster">
+          <img src="https://www.tallengestore.com/cdn/shop/products/7381745172660A_9471a5fc-a3dc-4e1a-a157-e585d3351b6c.jpg?v=1683929430" alt="3 Idiots">
+        </div>
       </div>
-    </section>
-  </main>
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>Dilwale Dulhania Le Jayenge</h1>
+          <p>El clásico romántico que marcó una generación.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(2)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img src="https://m.media-amazon.com/images/M/MV5BNDM5ZWM2ZTktZTM5My00NGQzLWFkYmItZjAyNDU0ZTliOGIyXkEyXkFqcGc@._V1_.jpg" alt="Dilwale Dulhania Le Jayenge">
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>Lagaan</h1>
+          <p>Una épica historia de coraje y determinación.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(3)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img src="https://m.media-amazon.com/images/I/61U2mIts0pL._AC_UF894,1000_QL80_.jpg" alt="Lagaan">
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>PK</h1>
+          <p>Un extraterrestre curioso descubre la Tierra.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(4)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img src="https://www.tallengestore.com/cdn/shop/products/7381746122932A_60e870c7-fb41-40bb-9bfc-cffb7c6a05e8_large.jpg?v=1683929494" alt="PK">
+        </div>
+      </div>
+      <!-- Slide 6 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url(https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80)"></div>
+        <div class="hero-content">
+          <span class="hero-tag">ESTRENO PRINCIPAL</span>
+          <h1>Dangal</h1>
+          <p>La inspiradora historia de un padre y sus hijas.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openBooking(5)">
+              <span>Reservar función</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Ver tráiler
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_.jpg" alt="Dangal">
+        </div>
+      </div>
+    </div>
+    <button class="hero-nav prev" onclick="changeSlide(-1)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="hero-nav next" onclick="changeSlide(1)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
 
+  <!-- PELÍCULAS -->
+  <section class="movies-section" id="cartelera">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-tag">PROGRAMACIÓN ESPECIAL</span>
+        <h2>Películas en cartelera</h2>
+      </div>
+      <div class="section-filters">
+        <button class="filter-btn active" data-filter="all">En cartelera</button>
+        <button class="filter-btn" data-filter="classic">Clásicos</button>
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Buscar película" id="searchInput">
+        </div>
+      </div>
+    </div>
+    <div class="movies-grid" id="moviesGrid"></div>
+  </section>
+
+  <!-- CINES -->
+  <section class="cines-section" id="cines">
+    <div class="cines-container">
+      <div class="cines-header">
+        <span class="section-tag">ELIGE TU SEDE</span>
+        <h2>Solo 1 cine disponible por ahora</h2>
+      </div>
+      <div class="cine-card">
+        <div class="cine-info">
+          <h3>Cine Excelsior</h3>
+          <p>Jr. de la Unión 798, Lima</p>
+          <div class="cine-tags">
+            <span class="tag tag-special">FUNCIÓN ESPECIAL</span>
+            <span class="tag tag-classic">CLÁSICO</span>
+            <span class="tag tag-classic">CLÁSICO</span>
+          </div>
+        </div>
+        <div class="cine-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8!2d-77.0374!3d-12.0464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzQ3LjAiUyA3N8KwMDInMTQuNiJX!5e0!3m2!1ses!2spe!4v1" width="100%" height="100%" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDICIONES -->
+  <section class="condiciones-section" id="condiciones">
+    <div class="condiciones-container">
+      <h2>Términos y Condiciones</h2>
+      <div class="condiciones-content">
+        <div class="condicion-item">
+          <h3>Reservas</h3>
+          <p>Las reservas de butacas deben realizarse con al menos 30 minutos de anticipación al inicio de la función. Una vez confirmada la reserva, no se aceptan cancelaciones ni reembolsos.</p>
+        </div>
+        <div class="condicion-item">
+          <h3>Entradas</h3>
+          <p>El precio de la entrada general es de S/ 25.00. Niños menores de 12 años pagan S/ 15.00. Adultos mayores de 60 años tienen un descuento del 50%.</p>
+        </div>
+        <div class="condicion-item">
+          <h3>Horarios</h3>
+          <p>Las funciones comienzan puntualmente. Se recomienda llegar 15 minutos antes. No se permite el ingreso una vez iniciada la película.</p>
+        </div>
+        <div class="condicion-item">
+          <h3>Alimentos</h3>
+          <p>Está permitido ingresar con alimentos y bebidas adquiridos en nuestro concession stand. No se permite el ingreso con bebidas alcohólicas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto-section" id="contacto">
+    <div class="contacto-container">
+      <h2>Contacto</h2>
+      <div class="contacto-grid">
+        <div class="contacto-info">
+          <div class="contacto-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h4>Dirección</h4>
+              <p>Jr. de la Unión 798, Lima, Perú</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+51 1 234 5678</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <div>
+              <h4>Email</h4>
+              <p>info@cinehindi.pe</p>
+            </div>
+          </div>
+        </div>
+        <form class="contacto-form" onsubmit="handleContact(event)">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label>Correo electrónico</label>
+            <input type="email" required placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea required rows="5" placeholder="Escribe tu mensaje..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">
+            <span>Enviar mensaje</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© 2026 Mitchell Stack</span>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-icon"><span>SPCI</span></div>
+        <p>Sociedad Peruana de Cine Indio</p>
+      </div>
+      <div class="footer-links">
+        <a href="#cartelera">Películas</a>
+        <a href="#cines">Cines</a>
+        <a href="#condiciones">Condiciones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Sociedad Peruana de Cine Indio. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- MODAL RESERVAS -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-overlay" onclick="closeBooking()"></div>
+    <div class="booking-content">
+      <button class="booking-close" onclick="closeBooking()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="booking-movie" id="bookingMovie"></div>
+      <div class="booking-steps">
+        <div class="step-indicator">
+          <div class="step active" data-step="1"><span>1</span><p>Horario</p></div>
+          <div class="step-line"></div>
+          <div class="step" data-step="2"><span>2</span><p>Butacas</p></div>
+          <div class="step-line"></div>
+          <div class="step" data-step="3"><span>3</span><p>Pago</p></div>
+        </div>
+        <!-- Step 1: Horario -->
+        <div class="step-content active" id="step1">
+          <h3>Selecciona un horario</h3>
+          <div class="date-selector">
+            <button class="date-btn active" data-date="2026-08-10"><span class="day">Hoy</span><span class="date">10 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-11"><span class="day">Mar</span><span class="date">11 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-12"><span class="day">Mié</span><span class="date">12 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-13"><span class="day">Jue</span><span class="date">13 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-14"><span class="day">Vie</span><span class="date">14 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-15"><span class="day">Sáb</span><span class="date">15 Ago</span></button>
+            <button class="date-btn" data-date="2026-08-16"><span class="day">Dom</span><span class="date">16 Ago</span></button>
+          </div>
+          <div class="time-selector" id="timeSelector"></div>
+          <button class="btn-primary btn-full" onclick="goToStep(2)">
+            <span>Continuar</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+        <!-- Step 2: Butacas -->
+        <div class="step-content" id="step2">
+          <h3>Selecciona tus butacas</h3>
+          <div class="screen"><span>PANTALLA</span></div>
+          <div class="seat-legend">
+            <div class="legend-item"><div class="seat-sample available"></div><span>Disponible</span></div>
+            <div class="legend-item"><div class="seat-sample selected"></div><span>Seleccionado</span></div>
+            <div class="legend-item"><div class="seat-sample occupied"></div><span>Ocupado</span></div>
+            <div class="legend-item"><div class="seat-sample vip"></div><span>VIP (+S/ 10)</span></div>
+          </div>
+          <div class="seats-container" id="seatsContainer"></div>
+          <div class="booking-summary">
+            <div class="summary-row"><span>Butacas seleccionadas:</span><span id="selectedCount">0</span></div>
+            <div class="summary-row total"><span>Total:</span><span id="totalPrice">S/ 0.00</span></div>
+          </div>
+          <div class="booking-actions">
+            <button class="btn-secondary" onclick="goToStep(1)">Atrás</button>
+            <button class="btn-primary" onclick="goToStep(3)" id="btnContinueStep2" disabled>
+              <span>Continuar</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <!-- Step 3: Pago -->
+        <div class="step-content" id="step3">
+          <h3>Confirma tu reserva</h3>
+          <div class="payment-form">
+            <div class="form-group">
+              <label>Nombre completo</label>
+              <input type="text" id="buyerName" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+              <label>Correo electrónico</label>
+              <input type="email" id="buyerEmail" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" id="buyerPhone" placeholder="+51 999 999 999" required>
+            </div>
+            <div class="form-group">
+              <label>Método de pago</label>
+              <div class="payment-methods">
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="card" checked>
+                  <div class="method-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                      <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                    <span>Tarjeta de crédito/débito</span>
+                  </div>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="yape">
+                  <div class="method-content">
+                    <span class="yape-icon">Y</span>
+                    <span>Yape</span>
+                  </div>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="plin">
+                  <div class="method-content">
+                    <span class="plin-icon">P</span>
+                    <span>Plin</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="booking-summary final">
+              <div class="summary-row"><span>Película:</span><span id="summaryMovie">-</span></div>
+              <div class="summary-row"><span>Horario:</span><span id="summaryTime">-</span></div>
+              <div class="summary-row"><span>Butacas:</span><span id="summarySeats">-</span></div>
+              <div class="summary-row total"><span>Total a pagar:</span><span id="summaryTotal">S/ 0.00</span></div>
+            </div>
+          </div>
+          <div class="booking-actions">
+            <button class="btn-secondary" onclick="goToStep(2)">Atrás</button>
+            <button class="btn-primary" onclick="confirmBooking()" id="btnConfirm">
+              <span>Confirmar reserva</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <!-- Success -->
+        <div class="step-content" id="stepSuccess">
+          <div class="success-animation">
+            <div class="success-circle">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+          </div>
+          <h3>¡Reserva confirmada!</h3>
+          <p>Tu reserva ha sido procesada exitosamente. Hemos enviado los detalles a tu correo electrónico.</p>
+          <div class="ticket-preview" id="ticketPreview"></div>
+          <button class="btn-primary btn-full" onclick="closeBooking()"><span>Cerrar</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
